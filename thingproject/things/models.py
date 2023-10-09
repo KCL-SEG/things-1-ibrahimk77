@@ -5,6 +5,6 @@ from django.db.models import Model
 from django.contrib.auth.models import AbstractUser
 
 class Thing(Model):
-    name = models.CharField()
-    description = models.CharField()
+    name = models.CharField(max_length=100)
+    description = models.CharField(max_length=200)
     quantity = models.IntegerField()
